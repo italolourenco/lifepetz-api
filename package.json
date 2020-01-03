@@ -1,0 +1,29 @@
+{
+  "name": "node-docker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx sequelize db:migrate && nodemon src/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "module-alias": "^2.2.2",
+    "pg": "^7.12.1",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.19.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.3",
+    "sequelize-cli": "^5.5.1"
+  },
+  "_moduleAliases": {
+    "@root": ".",
+    "@controllers": "src/app/controllers",
+    "@models": "src/app/models",
+    "@config": "src/config"
+  }
+}
