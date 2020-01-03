@@ -24,6 +24,7 @@
     "@root": ".",
     "@controllers": "src/app/controllers",
     "@models": "src/app/models",
-    "@config": "src/config"
+    "@config": "src/config",
+    "@routers": "src/app/routers"
   }
 }
